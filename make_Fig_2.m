@@ -7,7 +7,7 @@
 clear all
 close all
 
-fresh_start =0; % re-calculate data or load from a file?
+fresh_start = 0; % re-calculate data or load from a file?
 
 if fresh_start
     
