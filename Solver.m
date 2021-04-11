@@ -33,8 +33,8 @@ classdef Solver
             self.g = sqrt(2/self.tau)*self.sig_y;
 
             % arrays
-            self.y_a = zeros(self.nt,self.nr); % y array []
-            self.t_a = (1:self.nt)*self.dt; % time array [My]
+            self.y_a = zeros(self.nt,self.nr); 
+            self.t_a = (1:self.nt)*self.dt; 
             
             % Q-anon functions [eqns. 6 and 7 in text]
             self.Q = @(chi,sig_y) (2/(sig_y*sqrt(2*pi)))/(1 - erf(-chi/(sqrt(2)*sig_y)));
