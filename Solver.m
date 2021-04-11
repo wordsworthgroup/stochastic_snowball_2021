@@ -11,8 +11,8 @@ classdef Solver
         nt % number of timesteps for one realization []
         tau % linear relaxation timescale [My]
         dt % timestep [My]
-        t_a % time array
-        y_a % y array
+        t_a % time array [My]
+        y_a % y array []
         sig_y % std. dev. of y []
         g % noise ampitude [1/My^0.5]
         Q % normalization constant []
