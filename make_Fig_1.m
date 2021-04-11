@@ -82,13 +82,13 @@ set(h,'facealpha',.2)
 text(25,279,'Snowball transition region')
 axis([0 500 278 290])
 
-% display fCO2 pdf
+% display fCO2 p.d.f.
 subplot(2,2,2)
 plot(q_num,fCO2_h,'k',q_ana/climate.fCO20,fCO2_h,'r--')
 xlabel('q(f_{CO2}) [1/ppmv]'); ylabel('f_{CO2} [ppmv]')
 axis([0 3e-3 0 2*climate.chi*climate.fCO20])
 
-% display T pdf
+% display T p.d.f.
 subplot(2,2,4)
 semilogx(p_num,T_h,'k',p_ana,T_h,'r--')
 xlabel('p(T) [1/K]'); ylabel('T [K]')
