@@ -87,8 +87,8 @@ plot(chi_a*climate.fCO20/2,4.5-solver.t_a/1e3,'r--')
 plot(chi_a*climate.fCO20/4,4.5-solver.t_a/1e3,'r:')
 scatter(sig_f,4.5-t_trans/1e3,50,'k.');
 grid on
-xlabel('\sigma_y [ppmv]')
+xlabel('\sigma_f [ppmv]')
 ylabel('time of Snowball transition [Gy before present]')
 set(h1, 'Ydir', 'reverse')
 axis([1e1 1e5 -.5 2])
-legend('\chi','\chi/2','\chi/4','model output')
+legend('\chi \times f_{CO2,0}','\chi/2 \times f_{CO2,0}','\chi/4 \times f_{CO2,0}','model output')
