@@ -80,7 +80,7 @@ classdef Solver
         end
         
         function [f_num, x_bins] = calculate_numerical_pdf(~,x_a)
-            % calculate numerical pdf
+            % calculate numerical p.d.f.
         
             hist_tmp = histogram(x_a,150);
             f_num    = hist_tmp.Values;
