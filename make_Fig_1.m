@@ -41,8 +41,6 @@ if fresh_start
     dS   = climate.S0*(alpha-1);
     y    = @(x) exp((climate.a*x-dS)/climate.b);
     dydx = @(x) climate.a*y(x)/climate.b;
-    %q    = @(y) solver.q(y,chi,sig_y);
-    %p    = @(x) q(y(x)).*dydx(x);
     q_ana = solver.q(y_h,chi,sig_y);
     p_ana = solver.q(y(x_h),chi,sig_y).*dydx(x_h);
 
